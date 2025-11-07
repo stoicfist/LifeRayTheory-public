@@ -29,6 +29,32 @@
 \geometry{a4paper, margin=2.5cm}
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+% Theoretical Part
+% Kopfzeile
+\definecolor{themegray}{gray}{0.45}
+\fancyhead[L]{\small\textcolor{themegray}{\textit{Part I — Theoretical Framework}}}
+\fancyhead[R]{\small\textcolor{themegray}{DOI: \href{https://doi.org/10.5281/zenodo.17457708}{10.5281/zenodo.17457708}}}
+
+% Fußzeile
+\fancyfoot[L]{\small\textcolor{themegray}{Independent Conceptual Research (2025)}}
+\fancyfoot[R]{\small Page \thepage\ of \pageref{LastPage}}
+
+% durchgezogene Linie über ganze Seite
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrule}{%
+  \vskip-\footruleskip
+  \vskip-\footrulewidth
+  \color{gray!60}\hrule width\headwidth height\footrulewidth
+  \vskip\footruleskip
+}
+
 \title{\textbf{Life Rays \& Fragment Chains --\\
 A Theory of Encounter}}
 \author{Peter Ngo}
@@ -185,13 +211,13 @@ This makes the theory transdisciplinary: it can describe human attachment, group
 A further application of the life-ray model may be found in the study of humor.  
 Humor arises at the boundary between shared and own space,  
 where an unexpected shift or mismatch in perspective occurs.  
-It represents a momentary breakdown in symmetry between two interpretive systems— 
+It represents a momentary breakdown in symmetry between two interpretive systems --- 
 followed by a spontaneous re-synchronization through laughter or recognition.  
 
 From the viewpoint of life rays, humor can be described as a 
 \textbf{resonant asymmetry}: a playful misalignment between projection and perception.  
 Rather than causing fragmentation or misunderstanding, 
-the incongruity becomes a shared pulse of comprehension— 
+the incongruity becomes a shared pulse of comprehension --- 
 a micro-encounter in which difference itself becomes connection.  
 
 This interpretation aligns with approaches in humor studies that emphasize 
@@ -206,8 +232,13 @@ Laughter marks a moment of shared resonance in the shared space;
 it binds attention, emotion, and cognition into a single pulse of synchrony.  
 Such moments generate fragments of unusual vividness.  
 They are remembered not merely for their content, but for the affective relief they produce.  
-In this way, humor amplifies the density of experience— 
+In this way, humor amplifies the density of experience ---
 it transforms fleeting intersections into durable nodes of biographical memory.
+\footnote{This section draws upon public presentation materials by Don L.~F.~Nilsen and Alleen Pace Nilsen 
+(\cite{nilsen2023philosophy,nilsen2024humor_theories,nilsen2025humor_computers}), 
+as well as additional slides shared privately with the author. 
+Nilsen’s work explores humor as a bridge between cognitive abstraction, disciplinary frameworks, and philosophical reflection.}
+
 
 \subsection{Contribution (Summary of Theoretical Advances)}
 
@@ -232,7 +263,6 @@ it transforms fleeting intersections into durable nodes of biographical memory.
     Integrating humor as a form of \textit{resonant asymmetry} adds a novel cognitive-affective dimension:  
     humor increases memory density, strengthens shared space cohesion, and exemplifies how tension in communication can transform into connection.
 \end{itemize}
-
 
 \vspace{1em}
 \noindent
