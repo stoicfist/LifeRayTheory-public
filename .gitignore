@@ -1,21 +1,61 @@
-# LaTeX build files
+# =========================
+# LaTeX build artifacts
+# =========================
 *.aux
-*.log
-*.out
-*.toc
-*.lof
-*.lot
-*.fls
-*.fdb_latexmk
-*.synctex.gz
 *.bbl
+*.bcf
 *.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lot
+*.lof
+*.out
+*.run.xml
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+*.nav
+*.snm
+*.vrb
 
-# Temporary files
+# Intermediate files from glossaries, indexing, etc.
+*.glg
+*.glo
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
+
+# PDF viewer temp files
+*.pdfsync
+
+# latexmk / arara / Texpad / VSCode artifacts
+*.xdv
+*.dvi
+*.ps
+*.idx
+*.ilg
+*.ind
+
+# =========================
+# Editor and System files
+# =========================
 *.tmp
 *.bak
 *.swp
-
-# System files
+*.lock
+*.backup
 .DS_Store
 Thumbs.db
+
+# =========================
+# Custom project exclusions
+# =========================
+# Ignore all paper build outputs
+paper/*.bcf
+paper/*.run.xml
+paper/*.aux
+paper/*.log
+paper/*.out
