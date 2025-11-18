@@ -1,9 +1,9 @@
 \documentclass[12pt,a4paper]{article}
 
+% --- Required packages ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
-
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{amsmath}
@@ -11,8 +11,12 @@
 \usepackage{titlesec}
 \usepackage{lmodern}
 \usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[all]{hypcap}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linktoc=all, linkcolor=blue]{hyperref}
+
 % --- Hyperref setup ---
 \hypersetup{
     colorlinks=true,
@@ -23,17 +27,13 @@
     pdftitle={Life Rays \& Fragment Chains},
     pdfpagemode=FullScreen,
 }
-\usepackage[all]{hypcap}
 
 \graphicspath{{./images/}}
 
 \geometry{a4paper, margin=2.5cm}
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 
-% --- Required packages ---
-\usepackage{xcolor}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
+
 
 
 % --- Page Style Setup ---
@@ -91,10 +91,9 @@ Each person is understood as an individual trajectory in space and time, whose d
 These intersections generate \textit{fragments} --- units of memory or imprint --- which remain encoded along one's biographical timeline.
 
 The theory seeks to explain how emotional depth, social proximity, or systemic connectedness between individuals emerges --- or fails to emerge. 
-It links phenomenological thinking (Merleau-Ponty), narrative identity (Ricoeur), systems theory (Luhmann), and informatic structure (network theory) into an interdisciplinary conceptual model.\footnote{For contextual orientation only: parallels can be drawn to Maurice Merleau-Ponty’s phenomenology of perception, 
-Paul Ricoeur’s concept of narrative identity, 
-and Niklas Luhmann’s systems theory, 
-as well as to approaches in network theory and distributed systems in computer science. 
+It links phenomenological thinking (Merleau-Ponty), narrative identity (Ricoeur), systems theory (Luhmann), and informatic structure (network theory)
+into an interdisciplinary conceptual model.\footnote{For contextual orientation only: parallels can be drawn to Maurice Merleau-Ponty’s phenomenology of perception, 
+Paul Ricoeur’s concept of narrative identity, and Niklas Luhmann’s systems theory, as well as to approaches in network theory and distributed systems in computer science. 
 The present model, however, was developed independently and not derived from any of these frameworks.}
 
 As the first part of the project, this paper focuses on the conceptual and philosophical architecture of the model. 
@@ -113,19 +112,26 @@ The model is intended to be applicable in psychological, social, and technologic
 
 The image of the \textit{life ray} did not begin as an academic construct. It began in a letter.
 
-Years ago, I wrote a personal letter to someone whose presence had unexpectedly marked my own life. In that letter I tried, almost helplessly, to describe what it means for one person to cross the path of another. I did not have formal language for it at the time. I reached instead for metaphors: parallel timelines, points of contact, a shared space where two lives temporarily coil around each other like strands of a helix. I spoke of ``fragments'' -- memory particles left behind in us by others.
+Years ago, I wrote a personal letter to someone whose presence had unexpectedly marked my own life.
+In that letter I tried, almost helplessly, to describe what it means for one person to cross the path of another.
+I did not have formal language for it at the time. I reached instead for metaphors: parallel timelines, points of contact, a shared space where two lives temporarily coil around each other like strands of a helix.
+I spoke of ``fragments'' -- memory particles left behind in us by others.
 
 Only later did I understand that this attempt to describe a single human encounter was already the seed of a theory.
 
-The present text is an attempt to formalize that intuition. I propose a conceptual framework that I call \textit{life rays}. The model begins with the idea that every person occupies their own temporal-spatial trajectory -- their own ray of life -- and that encounters between people generate structural imprints on these rays. These imprints persist, and they shape identity.
+The present text is an attempt to formalize that intuition. I propose a conceptual framework that I call \textit{life rays}.
+The model begins with the idea that every person occupies their own temporal-spatial trajectory -- their own ray of life -- and that encounters between people generate structural imprints on these rays.
+These imprints persist, and they shape identity.
 
-This essay is therefore both personal and structural. It is not only about feeling but about form. The work should be read as a work in progress: it is intentionally open to refinement, contradiction, and extension -- both in philosophical dialogue and in applied domains such as psychology, social dynamics, and computational systems.
+This essay is therefore both personal and structural. It is not only about feeling but about form. The work should be read as a work in progress: it is intentionally open to refinement, contradiction,
+and extension -- both in philosophical dialogue and in applied domains such as psychology, social dynamics, and computational systems.
 
 \section{The Theory}
 
 \subsection{Life ray}
 
-Every human being can be imagined as moving along a line -- a \textbf{life ray} -- which begins at birth and ends at death. This ray represents the personal development, experience, and temporal unfolding of an individual within their \textit{own space}.
+Every human being can be imagined as moving along a line -- a \textbf{life ray} -- which begins at birth and ends at death.
+This ray represents the personal development, experience, and temporal unfolding of an individual within their \textit{own space}.
 
 The life ray is not simply a timeline in the chronological sense. It is the lived continuity of a person: their position in the world, their becoming, their self-story as it extends through time.
 
@@ -158,30 +164,36 @@ a transient image of mutual presence that echoes back into the solitude of the o
 
 \subsection{Shared space \& points of intersection}
 
-When two people meet, their life rays momentarily overlap in what I call a \textbf{shared space}. Within that shared space, \textbf{points of intersection} are created: concrete moments of encounter in which perception, attention, and presence mutually lock.
+When two people meet, their life rays momentarily overlap in what I call a \textbf{shared space}. Within that shared space, \textbf{points of intersection} are created:
+concrete moments of encounter in which perception, attention, and presence mutually lock.
 
 These intersection points are not just situations in the ordinary sense (``we talked in a hallway''). They are structural events. They alter how each person is encoded in the other.
 
 \subsection{Fragment formation}
 
-An intersection in the shared space is then carried back into the individual's own space as a \textbf{fragment}: a unit of memory, impression, or imprint. A fragment is a condensed biographical marker. It may be faint, or it may be deeply formative.
+An intersection in the shared space is then carried back into the individual's own space as a \textbf{fragment}: a unit of memory, impression, or imprint.
+A fragment is a condensed biographical marker. It may be faint, or it may be deeply formative.
 
 In other words: encounters become fragments, and fragments become part of the chain of self.
 
-Over time, a person accumulates many such fragments. Arranged along the life ray, they form what can be called a \textbf{fragment chain} -- a chain of remembered contacts, shaping identity not only by what happened, but by \textit{who} touched the ray and left something behind.
+Over time, a person accumulates many such fragments. Arranged along the life ray, they form what can be called a \textbf{fragment chain} -- a chain of remembered contacts, shaping identity not only by what happened,
+but by \textit{who} touched the ray and left something behind.
 
 \subsection{Double helix \& emotional proximity}
 
-When two people meet not just once, but repeatedly, or with unusual intensity, multiple intersection points are formed. In such cases, the two life rays begin to \textit{twist} around each other. Symbolically, they approach the form of a \textbf{double helix}: two trajectories, entwined, mutually shaping.
+When two people meet not just once, but repeatedly, or with unusual intensity, multiple intersection points are formed.
+In such cases, the two life rays begin to \textit{twist} around each other. Symbolically, they approach the form of a \textbf{double helix}: two trajectories, entwined, mutually shaping.
 
-In rare cases, this twisting can become so tight that what emerges is not merely two rays in proximity, but a \textbf{temporary shared strand} -- a lived ``we''-structure. This is often how we experience deep friendship, romantic closeness, family bonds, or formative companionship.
+In rare cases, this twisting can become so tight that what emerges is not merely two rays in proximity, but a \textbf{temporary shared strand} -- a lived ``we''-structure.
+This is often how we experience deep friendship, romantic closeness, family bonds, or formative companionship.
 
-The metaphor of ``life rays'' and their twisting into a double helix is not arbitrary. It echoes classical depictions of social systems, in which intertwined structures represent the interdependence of individual and relational dynamics (see Figure~\ref{fig:doppelhelix}).
+The metaphor of ``life rays'' and their twisting into a double helix is not arbitrary. It echoes classical depictions of social systems,
+in which intertwined structures represent the interdependence of individual and relational dynamics (see Figure~\ref{fig:doppelhelix}).
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/Doppelhelix.png}
-    \caption{Characteristics of social systems represented as a double helix, adapted from    	\protect\cite{bartscher2011}, following König, Volmer, Häfele.}
+    \caption{Characteristics of social systems represented as a double helix, adapted from \protect\cite{bartscher2011}, following König, Volmer, Häfele.}
     \label{fig:doppelhelix}
 \end{figure}
 
@@ -189,13 +201,15 @@ The metaphor of ``life rays'' and their twisting into a double helix is not arbi
 
 The theory of life rays is meant as a symbolically consistent explanatory system. Its aim is to approach human encounter not only as something subjectively felt, but as something structurally describable.
 
-At its core lies a claim: every significant relationship leaves a \textit{trace} on the biographical trajectory of a person. That trace is encoded as a fragment, formed through interaction, and modulated by emotional intensity. The theory claims translatability: it should apply, with care, across psychological, social, and even technological domains.
+At its core lies a claim: every significant relationship leaves a \textit{trace} on the biographical trajectory of a person. That trace is encoded as a fragment, formed through interaction, and modulated by emotional intensity.
+The theory claims translatability: it should apply, with care, across psychological, social, and even technological domains.
 
 \subsection{Psychological level -- fragment density and depth of memory}
 
 Why do certain encounters remain with us for years, while others fade almost immediately?
 
-From the perspective of life rays, a \textbf{point of intersection} between two rays marks a moment of synchronized perception: two subjects register each other in an emotionally, cognitively, or physically resonant way. That resonance produces a \textbf{fragment} -- a compressed memory-kernel that is incorporated into one's narrative self.
+From the perspective of life rays, a \textbf{point of intersection} between two rays marks a moment of synchronized perception: two subjects register each other in an emotionally, cognitively, or physically resonant way.
+That resonance produces a \textbf{fragment} -- a compressed memory-kernel that is incorporated into one's narrative self.
 
 The stronger the affective density or existential charge of that moment, the more deeply the fragment embeds. Some fragments become quiet background texture. Others become defining events.
 
@@ -203,7 +217,8 @@ The stronger the affective density or existential charge of that moment, the mor
 
 On the social level, intersections can be read as interfaces between systems. A ``life ray'' can be interpreted as the structured pattern of one actor's behavior and presence. Encounters then act as coupling events between systems.
 
-From this angle, a group, an institution, or a relationship network can be modeled as a field of overlapping rays and recurring intersections. The resulting \textbf{fragment chain} functions like an individual audit log of social experience: a traceable path of mutual influence and adaptation, across both personal and collective development.
+From this angle, a group, an institution, or a relationship network can be modeled as a field of overlapping rays and recurring intersections. The resulting \textbf{fragment chain} functions like an individual audit log of social experience:
+a traceable path of mutual influence and adaptation, across both personal and collective development.
 
 In this sense, human relationships can be analyzed not only in emotional vocabulary (care, conflict, trust), but also structurally (coupling, synchronization, break, drift).
 
@@ -211,7 +226,8 @@ In this sense, human relationships can be analyzed not only in emotional vocabul
 
 The model also admits a technological reading.
 
-In computational terms (computer science, network theory, multi-agent systems), a life ray can be treated as a directed process or data stream belonging to an autonomous unit. An intersection point corresponds to an interface event: a protocol handshake, an API call, a transaction boundary.
+In computational terms (computer science, network theory, multi-agent systems), a life ray can be treated as a directed process or data stream belonging to an autonomous unit.
+An intersection point corresponds to an interface event: a protocol handshake, an API call, a transaction boundary.
 
 From that view:
 \begin{itemize}
@@ -220,7 +236,8 @@ From that view:
     \item A \textbf{fragment chain} is the ordered history of those records.
 \end{itemize}
 
-Under this interpretation, two services or agents that repeatedly interact begin to resemble a coupled helix: their internal states become mutually anticipatory. Trust, here, becomes not only emotion but predictability. Stability becomes entanglement.
+Under this interpretation, two services or agents that repeatedly interact begin to resemble a coupled helix: their internal states become mutually anticipatory.
+Trust, here, becomes not only emotion but predictability. Stability becomes entanglement.
 
 This makes the theory transdisciplinary: it can describe human attachment, group dynamics, and also certain properties of distributed computational systems.
 
@@ -243,7 +260,8 @@ relational dynamics, cognitive incongruity, and affective synchrony.
 In this sense, humor embodies a subtle form of encounter:  
 an oscillation between tension and release,  
 between misunderstanding and unity.
-\footnote{Sections 4.4 and 4.5 draw upon presentation materials by Don L. F. Nilsen and Alleen Pace Nilsen \cite{nilsen2023philosophy,nilsen2024humor_theories,nilsen2025humor_computers}, as well as additional slide material shared privately by Don L. F. Nilsen with the author. Section 4.4 interprets Nilsen’s conceptual approach to humor within the life-ray model, while 4.5 extends it toward a theory of memory density.}
+\footnote{Sections 4.4 and 4.5 draw upon presentation materials by Don L. F. Nilsen and Alleen Pace Nilsen \cite{nilsen2023philosophy,nilsen2024humor_theories,nilsen2025humor_computers},
+as well as additional slide material shared privately by Don L. F. Nilsen with the author. Section 4.4 interprets Nilsen’s conceptual approach to humor within the life-ray model, while 4.5 extends it toward a theory of memory density.}
 
 
 \subsection{Humor and Memory Density}
@@ -282,7 +300,9 @@ it transforms fleeting intersections into durable nodes of biographical memory.
 \vspace{1em}
 \noindent
 \textit{Conclusion.}  
-The theory of life rays is offered as a symbolic and structural way to describe human development through encounter. Its epistemic value lies in its attempt to unfold a multi-perspectival model of subjectivity, relation, and memory. It aims to be both intuitively readable and analytically useful. It remains intentionally open: it invites empirical work, artistic expansion, and computational modeling.
+The theory of life rays is offered as a symbolic and structural way to describe human development through encounter.
+Its epistemic value lies in its attempt to unfold a multi-perspectival model of subjectivity, relation, and memory.
+It aims to be both intuitively readable and analytically useful. It remains intentionally open: it invites empirical work, artistic expansion, and computational modeling.
 
 \vspace{4em}
 \noindent\rule{\textwidth}{0.4pt}
