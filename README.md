@@ -8,7 +8,7 @@
 
 ---
 
-## 🧭 Overview
+## Overview
 
 *Life Rays & Fragment Chains* is a theoretical framework exploring how experience, meaning, and cognition emerge through resonant encounters between systems.  
 Developed outside institutional settings, the project seeks to bridge phenomenology, systems theory, cognitive abstraction, and affective synchrony.
@@ -24,7 +24,7 @@ The theory unfolds across several levels:
 
 ---
 
-## 🧩 Current Paper (Part I: Theoretical Framework)
+## Current Paper (Part I: Theoretical Framework)
 
 This repository hosts the **theoretical foundation** of the Life Ray model.  
 It introduces the conceptual architecture and links to ongoing analytical, applied, and integrative studies.  
@@ -36,7 +36,7 @@ drawing connections between conceptual abstraction, epistemic framing, and humor
 
 ---
 
-## 🧠 Research Context
+## Research Context
 
 This project is conducted as part of an ongoing series of **independent conceptual investigations** into:
 - resonance and cognition,  
@@ -49,7 +49,7 @@ It is not affiliated with any university or institution.
 
 ---
 
-## 📘 Citation
+## Citation
 
 If you reference this work, please cite:
 
