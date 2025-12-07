@@ -1,7 +1,7 @@
 # Life Rays & Fragment Chains — A Theory of Encounter
 
 **Author:** Peter Ngo  
-**DOI:** [10.5281/zenodo.17457708](https://doi.org/10.5281/zenodo.17457708)  
+**DOI:** [10.5281/zenodo.17457708](https://doi.org/10.5281/zenodo.17561066)  
 **License:** CC BY-NC-SA 4.0  
 **Type:** Independent Conceptual Research  
 **Language:** English  
