@@ -54,7 +54,7 @@ It is not affiliated with any university or institution.
 If you reference this work, please cite:
 
 > Ngo, Peter. (2025). *Life Rays & Fragment Chains — A Theory of Encounter.* Zenodo.  
-> DOI: [10.5281/zenodo.17457708](https://doi.org/10.5281/zenodo.17457707)
+> DOI(latest): [10.5281/zenodo.17457707](https://doi.org/10.5281/zenodo.17457707)
 
 BibTeX:
 ```bibtex
