@@ -1,0 +1,635 @@
+\documentclass[12pt,a4paper]{article}
+\input{config.tex}
+
+% --- Page Style Setup ---
+\pagestyle{fancy}
+\fancyhf{} % clear defaults
+
+% --- Header ---
+\fancyhead[L]{\textcolor{gray}{\small\textsc{Life Rays \& Fragment Chains}}}
+\fancyhead[R]{\textcolor{gray}{\small\textit{Part II -- Formalisation  Fragments}}}
+
+% --- Footer ---
+\fancyfoot[L]{\textcolor{gray}{\footnotesize Independent Conceptual Research}}
+
+% clickable DOI link:
+\fancyfoot[R]{\footnotesize\href{https://doi.org/10.5281/zenodo.17561066}{\textcolor{gray!65!black}{DOI: 10.5281/zenodo.17561066}}}
+
+% clickable page reference (x of y)
+\fancyfoot[C]{\textcolor{gray}{\footnotesize Page \thepage\ of \pageref{LastPage}}}
+
+% --- Line colors ---
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{gray!60}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{gray!60}\leaders\hrule height \footrulewidth\hfill}}
+
+\title{\textbf{Life Rays \& Fragment Chains --\\
+A Theory of Encounter}}
+\author{Peter Ngo}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\vspace{1.5em}
+\begin{center}
+\rule{0.45\textwidth}{0.4pt}\\[1em]
+
+\textit{
+For someone who once crossed my path,\\
+whose presence became the origin of this theory.
+}
+
+\vspace{0.6em}
+
+\textit{
+And for the colleagues, friends, and companions\\
+who helped transform intuition into structure\\
+through challenge, questioning,\\
+and refinement.
+}
+
+\rule{0.45\textwidth}{0.4pt}
+\end{center}
+\vspace{2em}
+
+\tableofcontents
+\newpage
+\onehalfspacing
+
+\section{Abstract}
+This preprint develops the mathematical foundation of the Life Ray Theory, expanding the
+conceptual framework introduced in Part~I into a formal system. The goal is to provide
+the operator structures, notational conventions, and dynamical principles that allow
+encounter, fragmentation, resonance, and coupling to be represented in a precise and
+model-ready form. These formulations prepare the groundwork for later computational,
+systemic, and empirical applications in Parts~III and~IV.
+
+
+\vspace{1em}
+\begin{center}
+\textcolor{gray}{\small \textit{Preprint – Work in progress – Part I of a four-part research project.}}
+\end{center}
+\vspace{1em}
+
+\section{Introduction}
+Part~I of this project presented the phenomenological and conceptual architecture of
+life rays, fragment chains, and shared spaces. Part~II marks a transition: it is the first
+attempt to translate these intuitions into formal mathematical structures. The aim is not
+to reduce the richness of encounter, but to render its mechanisms expressible through
+operators, functions, and topological relations.
+
+What follows is therefore a foundational step. It provides the notation, the structural
+assumptions, and the core transformations upon which later models of resonance,
+coupling, and dynamical evolution will rely. 
+
+In this sense, the present text serves as the
+bridge between the intuitive origins of the theory and its scientific articulation.
+
+\subsection{Motivation and Scope}
+Part~I introduced the core structures of the Life Ray Theory on a descriptive and
+phenomenological level. Concepts such as life rays, fragments, shared space, and
+resonant proximity were defined qualitatively and illustrated through structural
+metaphors. Their function was conceptual clarity, not mathematical rigor.
+
+The purpose of Part~II is fundamentally different. Its scope is to provide:
+\begin{enumerate}
+    \item a precise notational system for events, fragments, and spaces,
+    \item formal operators for transduction, integration, and resonance,
+    \item metrics for proximity, salience, and coupling,
+    \item a formal salience function expressing weighted event imprinting,
+    \item the topological assumptions that underlie the geometry of encounter,
+    \item and a first formalization of resonant asymmetry (humor) as a 
+          special case of temporal divergence.
+\end{enumerate}
+
+The formulations introduced here are intentionally minimal: they aim to capture the
+essential structure of interaction without binding the theory to a specific
+computational model. Later parts will extend these foundations toward simulation,
+multi-agent architectures, and empirical applications.
+
+In short, the goal of this part is not to complete the theory, but to make it formally
+expressible.
+
+\section{Notation and Basic Objects}
+
+Part~I introduced the intuitive architecture of life rays, fragments, and shared 
+spaces. In Part~II, these notions receive a formal representation. The following 
+definitions establish the basic mathematical objects on which all subsequent 
+operators and metrics will rely.
+
+\subsection{Core Formal Structure}
+
+We introduce the minimal formal structure underlying the Life Ray Theory. 
+All later operators, metrics, and interpretations are extensions of this core.
+
+\subsection{Agents and Own Space}
+
+Let $K$ be a set of agents.  
+Each agent $k \in K$ is associated with an own space $S_k$, representing its internal experiential state space.
+
+\subsection{Life Rays}
+
+A life ray is defined as a time-parametrized curve
+\[
+\gamma_k : \mathbb{R}_{\ge 0} \to S_k,
+\]
+mapping personal time to internal state.
+
+\subsection{Shared Events}
+
+An encounter between two agents $i,j \in K$ at time $t$ is modeled as an event
+\[
+E_{ij}(t).
+\]
+The shared space is defined as the set of all such events:
+\[
+C = \{ E_{ij}(t) \mid i,j \in K,\, t \in \mathbb{R}_{\ge 0} \}.
+\]
+
+\subsection{Fragments}
+
+For each event and each involved agent, a fragment is generated by a transduction operator
+\[
+T_k : E_{ij}(t) \mapsto F_k.
+\]
+A fragment is minimally represented as
+\[
+F_k = (t, v_k),
+\]
+where $t$ is the event time and $v_k$ an internal state imprint.
+
+\subsection{Fragment Chains}
+
+The fragment chain of agent $k$ at time $t$ is the ordered sequence
+\[
+\mathcal{F}_k(t) = (F_k^{(1)}, F_k^{(2)}, \dots, F_k^{(n)}),
+\]
+containing all fragments generated up to time $t$.
+
+This core defines the minimal ontology of the Life Ray Theory: agents, internal state spaces,
+time-parametrized life rays, shared events, and fragment-based memory structures.
+All further definitions refine this structure by adding semantic, affective, and dynamical detail.
+
+
+\section{Extended Structures}
+
+\subsection{Extended Event Structure}
+
+While the core model represents an event as a minimal intersection $E_{ij}(t)$,
+we now enrich events with descriptive and phenomenological parameters:
+
+\[
+E_{ij} = (t, C, D, I, V, R),
+\]
+
+\subsection{Geometric Interpretation of Life Rays}
+
+The life ray 
+\[
+\gamma_k : \mathbb{R}_{\ge 0} \to \mathcal{S}_k
+\]
+may be interpreted both geometrically and temporally.
+
+Geometrically, $\gamma_k$ represents a trajectory in the agent’s experiential state space
+$\mathcal{S}_k$. Each point $\gamma_k(\tau)$ corresponds to the internal state of agent $k$
+at personal time $\tau$. Intersections between $\gamma_i$ and $\gamma_j$ in shared space
+correspond to encounter events $E_{ij}$.
+
+Temporally, $\gamma_k$ is a parametrized curve whose parameter $\tau \in \mathbb{R}_{\ge 0}$
+denotes the subjective time of the agent. In this sense, a life ray encodes the continuous
+evolution of experience, while events represent discrete synchronization points between
+different rays.
+
+Two rays $\gamma_i$ and $\gamma_j$ may therefore intersect multiple times in shared space,
+giving rise to a sequence of encounter events
+\[
+E_{ij}^{(1)}, E_{ij}^{(2)}, E_{ij}^{(3)}, \dots,
+\]
+as illustrated in Figure~\ref{fig:life_rays_events}.
+
+\begin{figure}[h]
+    \centering
+        \begin{tikzpicture}[x=1cm,y=1cm,>=stealth,thick]
+            % Time axis
+            \draw[->,gray!70] (0,0) -- (10,0) node[right]{Time};
+
+            % Life ray i
+            \draw[blue] (0.5,1.2) -- (9.5,1.2)
+                node[right,black]{\small Life ray $\gamma_i$};
+
+            % Life ray j
+            \draw[red] (0.5,-0.8) -- (9.5,-0.8)
+                node[right,black]{\small Life ray $\gamma_j$};
+
+            % Shared space window
+            \fill[gray!15,rounded corners] (3.2,-1.3) rectangle (6.8,2.5);
+            \node[gray!60] at (5.0,1.8) {\footnotesize shared space};
+
+            % Intersection events
+            \filldraw[blue!70] (3.8,1.2) circle (2.2pt);
+            \filldraw[red!70]  (3.8,-0.8) circle (2.2pt);
+            \draw[->,gray!70] (3.8,0.55) -- (3.8,0.95);
+            \draw[->,gray!70] (3.8,-0.1) -- (3.8,-0.55);
+            \node at (3.8,0.25) {\footnotesize $E_{ij}^{(1)}$};
+
+            \filldraw[blue!70] (5.2,1.2) circle (2.2pt);
+            \filldraw[red!70]  (5.2,-0.8) circle (2.2pt);
+            \draw[->,gray!70] (5.2,0.55) -- (5.2,0.95);
+            \draw[->,gray!70] (5.2,-0.1) -- (5.2,-0.55);
+            \node at (5.2,0.25) {\footnotesize $E_{ij}^{(2)}$};
+
+            \filldraw[blue!70] (6.2,1.2) circle (2.2pt);
+            \filldraw[red!70]  (6.2,-0.8) circle (2.2pt);
+            \draw[->,gray!70] (6.2,0.55) -- (6.2,0.95);
+            \draw[->,gray!70] (6.2,-0.1) -- (6.2,-0.55);
+            \node at (6.2,0.25) {\footnotesize $E_{ij}^{(3)}$};
+
+        \end{tikzpicture}
+
+    \caption{Two life rays ($\gamma_i,\gamma_j$) with repeated intersection events occurring within the shared space.}
+    \label{fig:life_rays_events}
+\end{figure}
+
+
+\subsection{Fragments}
+
+Every event $E_{ij}$ generates a perspective-dependent memory fragment 
+for each participant:
+\[
+F_k = (s_k, \phi_k, \theta_k, M_k),
+\]
+where $s_k$ is the salience, $\phi_k$ a semantic label, 
+$\theta_k$ the internal timestamp, and $M_k$ a set of affective, bodily, 
+or contextual markers.
+
+\subsection{Fragment Chains}
+
+The memory structure of an agent $k$ is modeled as a time-dependent
+collection of discrete memory fragments.
+Rather than assuming memory to be continuous, the Life Ray Theory
+treats biographical memory as an ordered accumulation of such fragments.
+At any time $t$, the fragment chain of agent $k$ is represented as an ordered sequence
+\[
+\mathcal{F}_k(t) = (F_k^{(1)}, F_k^{(2)}, \dots, F_k^{(n)}),
+\]
+where each fragment corresponds to a previously transduced encounter event.
+Together, these fragments define the evolving structure of memory over time.
+
+We denote by $\mathbin{\|}$ the concatenation operator on fragment chains, such that
+\begin{equation}
+\mathcal{F}_k(t+\varepsilon) = \mathcal{F}_k(t) \mathbin{\|} F_k
+\label{eq:fragment-concatenation}
+\end{equation}
+where $\mathbin{\|}$ appends the new fragment $F_k$ to the end of the existing ordered
+sequence $\mathcal{F}_k(t)$.
+
+Memory formation is assumed to be incremental rather than continuous.
+When a new salient event occurs, it generates a fragment $F_k$ that is
+added to the existing chain according to Eq.~\eqref{eq:fragment-concatenation}.
+Here, $\varepsilon$ denotes a minimal temporal update step associated
+with event processing, not a physical duration.
+
+This formulation captures the idea that biographical memory grows
+through the accumulation of discrete experiential units, while
+preserving the temporal structure necessary for later integration,
+resonance, and narrative coherence.
+
+\subsection{Shared and Own Space}
+
+We distinguish:
+\begin{itemize}
+    \item the \textbf{shared space} $C$, in which events $E_{ij}$ occur,
+    \item and the \textbf{own space} $\mathcal{S}_k$, containing the 
+          internal representation and fragment chain of agent $k$.
+\end{itemize}
+
+An event $E_{ij}$ lies in shared space, while its transformed fragments 
+$F_i$ and $F_j$ reside in the respective own spaces.
+
+\subsection{Time Notation}
+
+We use:
+\[
+t \quad \text{(external event time)}, \qquad 
+\theta_k \quad \text{(internal time of fragment formation)},
+\]
+and, in the case of resonant asymmetry (see Section~\ref{sec:asymmetry}),
+the distinction between expected and realized meaning times:
+\[
+t_e \neq t_r.
+\]
+
+These definitions provide the foundational vocabulary from which the 
+formal operators (transduction, integration, resonance), metrics 
+(salience, proximity, coupling), and geometric assumptions of later 
+sections can be expressed.
+
+\section{Mechanism: Transduction}
+
+\subsection{Definition}
+An \emph{intersection event} $E_{ij}(t,C,D,I,V,R)$ arises in the
+\emph{shared space} when the life rays of agents $i$ and $j$
+interact at time $t$ within a context $C$ (location, task, social
+setting), with duration $D$, intensity $I$, valence $V$, and
+perceived reciprocity $R$.
+\emph{Transduction} is defined as the operator
+\[
+\mathcal{T}:\;
+E_{ij}(t,C,D,I,V,R)
+\;\mapsto\;
+\big(F_i,\;F_j\big),
+\]
+
+\begin{figure}[h]
+    \centering
+        \begin{tikzpicture}[x=1cm,y=1cm,>=stealth,thick]
+
+            % Event node
+            \node[draw,rounded corners,fill=gray!10,align=center] (E) at (0,0)
+                {\small Intersection event\\[-2pt] $E_{ij}(t,C,D,I,V,R)$};
+
+            % Fragment nodes
+            \node[draw,rounded corners,fill=blue!8,align=left] (Fi) at (6,1.0)
+                {\small Fragment $F_i$:\\[-2pt]
+                 \footnotesize content, timestamp, affect,\\[-3pt]
+                 tags, label $\ell_i$, salience $s_i$};
+
+            \node[draw,rounded corners,fill=red!8,align=left] (Fj) at (6,-1.0)
+                {\small Fragment $F_j$:\\[-2pt]
+                 \footnotesize content, timestamp, affect,\\[-3pt]
+                 tags, label $\ell_j$, salience $s_j$};
+
+            % Transduction arrows
+            \draw[->] (E.east) -- (Fi.west)
+                node[midway,above,sloped]{\footnotesize $\mathcal{T}$};
+            \draw[->] (E.east) -- (Fj.west)
+                node[midway,below,sloped]{\footnotesize $\mathcal{T}$};
+
+            % Alignment (A)
+            \draw[<->,gray!60,dashed] (Fi.south east) to[bend left=15]
+                node[midway,right]{\footnotesize $\mathcal{A}(F_i,F_j)\in[0,1]$}
+                (Fj.north east);
+
+        \end{tikzpicture}
+
+    \caption{Transduction: The shared event is transformed into two perspective-dependent fragments; an optional alignment $\mathcal{A}$ may occur through shared recall or co-narration.}
+    \label{fig:transduction_diagram}
+\end{figure}
+
+which transforms the shared event into individual
+\emph{fragments} $F_k$ (for $k\in\{i,j\}$).
+A fragment minimally contains the fields
+\[
+F_k=\big(
+\text{content},\,
+\text{timestamp},\,
+\text{affect},\,
+\text{semantic tags},\,
+\ell_k,\,
+s_k
+\big),
+\]
+where $\ell_k$ denotes a semantic label (short interpretation)
+and $s_k\in\mathbb{R}_{\ge 0}$ represents the fragment’s
+\emph{salience} (imprint strength).
+
+\medskip
+\subsection{Process Structure}
+Transduction unfolds in three conceptual stages:
+\begin{enumerate}
+    \item \emph{Detection (Marking):}
+    The event $E_{ij}$ exceeds an activation threshold $\theta$
+    and is registered as salient.
+    \item \emph{Encoding (Bundling):}
+    Sensory input and evaluation are condensed into a
+    meaning-bearing core, forming $F_k$
+    (including tags and semantic label $\ell_k$).
+    \item \emph{Integration (Chain Insertion):}
+    The fragment $F_k$ is appended to the fragment chain of
+    agent $k$; consolidation processes may increase or decrease
+    $s_k$ over time.
+\end{enumerate}
+
+\medskip
+\subsection{Asymmetry and Alignment}
+Transduction is inherently perspective-dependent:
+from the same event $E_{ij}$, two generally distinct fragments
+$F_i$ and $F_j$ emerge, differing in semantic label $\ell$
+and salience $s$.
+Subsequent \emph{alignment} through shared recall or narration
+can be modeled as a partial matching
+\[
+\mathcal{A}(F_i,F_j)\in[0,1],
+\]
+representing the degree of shared meaning.
+
+\medskip
+\subsection{Dynamics and Proximity (Helix)}
+Repeated reciprocal intersection events reinforce existing
+fragments or generate successor fragments.
+At a macroscopic level, this process increases the
+\emph{degree of intertwining} between life rays.
+Operationally, a \emph{twist index} may be updated incrementally
+after each event:
+\[
+\text{twist}_{ij}
+\;\leftarrow\;
+\text{twist}_{ij}
+\;+\;
+\beta_I\,\bar I
+\;+\;
+\beta_D\,D
+\;+\;
+\beta_R\,\bar R
+\;+\;
+\beta_F,
+\]
+where $\bar I$ and $\bar R$ aggregate both perspectives
+(e.g.\ mean values), and $\beta_\bullet$ denote domain weights.
+
+\subsection{Failure and Boundary Cases}
+\begin{itemize}
+    \item \emph{Sub-threshold events:}
+    Insufficient intensity or novelty $\Rightarrow$ no stable fragment.
+    \item \emph{Interference:}
+    Competing events $\Rightarrow$ distorted or fragmented encoding.
+    \item \emph{Reframing:}
+    Later information alters contextual fit $\Rightarrow$
+    re-weighting of $\ell_k$ and $s_k$.
+\end{itemize}
+
+
+\section{Salience and Fragment Integration}
+
+\subsection{Salience Function}
+
+The imprint strength of an event on an agent’s memory is quantified
+by the \emph{salience} of the resulting fragment.
+For an agent $k$, salience is modeled as a weighted sum:
+\[
+s_k
+= w_I I_k
++ w_D D
++ w_R R_k
++ w_F F_k^*
++ w_N N_k
+- w_X X_k,
+\quad w_\bullet \ge 0.
+\]
+
+Here, $I_k$ denotes the perceived interaction intensity,
+$D$ the duration of the event,
+$R_k$ the experienced reciprocity,
+$F_k^*$ the frequency of similar prior events,
+$N_k$ a novelty factor,
+and $X_k$ represents interference or competing influences.
+The weights $w_\bullet$ encode agent-specific sensitivity profiles.
+
+This formulation reflects the assumption that not all encounters
+contribute equally to memory formation.
+Salience governs which fragments dominate the fragment chain,
+thereby shaping memory depth, fragment density, and later resonance effects.
+
+\subsection{Integration Operator}
+
+While transduction generates individual fragments from shared events, biographical
+coherence arises through their integration into the existing fragment chain.  
+We model this process by an integration operator acting on the memory structure of a
+single agent $k$:
+
+\[
+A_k : (\mathcal{F}_k(t), F_k) \longrightarrow \mathcal{F}_k(t+\varepsilon).
+\]
+
+In its minimal form, the operator reduces to sequence concatenation:
+\[
+A_k(\mathcal{F}_k(t), F_k)
+= \mathcal{F}_k(t) \mathbin{\|} F_k.
+\]
+
+The operator $A_k$ modifies the fragment chain by incorporating the new fragment
+$F_k$ into the existing structure. Depending on contextual and semantic relations,
+this may involve reinforcement, attenuation, or reweighting of existing fragments.
+
+
+\section{Resonant Asymmetry (Humor)}
+\label{sec:asymmetry}
+
+\subsection{Phenomenological Origin}
+
+In Part~I of the \emph{Life Ray Theory}, humor was introduced at a
+phenomenological level.
+Its central mechanisms were described conceptually, without formal
+mathematical specification.
+
+The core assumptions were the following:
+\begin{itemize}
+    \item Humor arises from an asynchrony between an expected meaning time
+          $t_e$ and the actual realization time $t_r$.
+    \item Prior to semantic resolution, the life ray exhibits a temporary
+          deviation, perceived as a \emph{resonant asymmetry}.
+    \item The delayed realization produces a local densification of the
+          fragment structure, determining the subjective intensity of
+          the humorous moment.
+    \item The interpreting life ray conceptually \emph{winds} around the
+          punchline’s origin before the effective intersection occurs.
+\end{itemize}
+
+This leads to the guiding intuition:
+
+\begin{quote}
+\textbf{Humor is a local increase of energetic density in the fragment
+configuration, caused by temporally shifted intersection points of
+two life rays.}
+\end{quote}
+
+In Part~I, this description was intentionally left without
+formalization or visualization in order to preserve ontological clarity.
+
+\subsection{Temporal Asymmetry}
+
+The defining structural condition for humor is a temporal divergence
+between expectation and realization:
+\[
+t_e \neq t_r.
+\]
+The greater this divergence, the more pronounced the pre-resolution
+fragment accumulation becomes, up to a cognitive or affective saturation
+threshold.
+
+\subsection{Geometric Interpretation}
+
+Formally, resonant asymmetry may be interpreted as a spiral-like
+trajectory of the interpreting ray prior to intersection.
+The number of windings reflects repeated prediction updates and
+micro-fragment accumulation.
+Let $W$ denote the number of effective windings before realization.
+
+\subsection{First Humor Metric}
+
+As a first approximation, the intensity of humor may be expressed as
+\[
+A_{\text{humor}} \;\propto\; \frac{W}{\lvert t_r - t_e \rvert},
+\]
+where $W$ denotes the number of pre-intersection windings and
+$\lvert t_r - t_e \rvert$ the temporal divergence between expectation and realization.
+
+This expression captures two central intuitions: 
+(i) repeated interpretive cycling (larger $W$) amplifies the humorous effect, and 
+(ii) increasing temporal delay reduces coherence and thus diminishes humor.
+In practice, the divergence of the expression for $\lvert t_r - t_e \rvert \to 0$ is
+understood to be limited by cognitive saturation effects; consequently, this ratio
+may be replaced in later models by a normalized or saturating function.
+
+\subsection{Position within the Formal Framework}
+
+With the introduction of salience and integration,
+the Life Ray Theory becomes formally tractable:
+events acquire operative structure,
+fragments obtain a well-defined internal representation,
+and interactions receive a mathematical signature.
+
+Within this formal setting, humor constitutes a special dynamical case
+of resonant interaction.
+It emerges when high fragment salience coincides with controlled
+temporal divergence.
+In later parts, this formalization will support
+the empirical parameterization of salience and temporal divergence
+(Part~III) and the development of simulations and applied systems
+(Part~IV).
+
+\vspace{4em}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{1em}
+\footnotesize
+\noindent\textbf{Author’s Note and Disclosure} \\ 
+This essay represents an independent conceptual work. All theoretical ideas, models, 
+definitions, and formal structures were conceived, developed, and decided exclusively 
+by the author.
+
+An AI-based writing assistant (ChatGPT by OpenAI) was used solely for the purpose of 
+feedback and critical review, in particular with respect to clarity, structure, 
+consistency of notation, and linguistic formulation. The assistant was further employed 
+for minor language editing, translation, and formatting suggestions.  
+
+At no point did the AI system contribute original theoretical content, conceptual 
+design, or mathematical structure. All intellectual responsibility for the content, 
+interpretation, and validity of the presented theory remains entirely with the author.
+
+\normalsize
+\vspace{2em}
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{references}
+
+% --- Print Index ---
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Index}
+
+\printindex
+\end{document}
