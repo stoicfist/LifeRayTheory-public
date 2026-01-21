@@ -1,0 +1,69 @@
+% =====================================================================
+% Life Rays & Fragment Chains – Global Configuration (config.tex)
+% =====================================================================
+
+% Encoding, fonts, and language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+
+% Page layout and spacing
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\usepackage{setspace}
+\usepackage{parskip}
+
+% Mathematics and graphics
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
+
+
+% Section formatting
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+
+% Header, footer, and page style
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+
+% Colors and hyperlink setup
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linktoc=all, linkcolor=blue]{hyperref}
+
+% Global hyperref configuration
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=ForestGreen,
+    pdftitle={Life Rays \& Fragment Chains},
+    pdfpagemode=FullScreen,
+}
+
+\usepackage[all]{hypcap}
+\usepackage{tikz}
+
+
+% Glossary system
+\usepackage[nonumberlist]{glossaries}
+\makeglossaries
+
+
+% Index system
+\usepackage{imakeidx}
+
+% Custom index heading used in the Life Ray Theory style
+\newcommand{\indexheading}[1]{%
+  \hypertarget{index:#1}{\centerline{\Large{#1}}\nopagebreak}%
+  \pdfbookmark[2]{#1}{index:#1}%
+}
+
+\makeindex[options=-s LifeRayTheory.mst]
