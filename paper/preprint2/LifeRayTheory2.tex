@@ -7,13 +7,13 @@
 
 % --- Header ---
 \fancyhead[L]{\textcolor{gray}{\small\textsc{Life Rays \& Fragment Chains}}}
-\fancyhead[R]{\textcolor{gray}{\small\textit{Part II -- Formalisation  Fragments}}}
+\fancyhead[R]{\textcolor{gray}{\small\textit{Part II -- Formal Framework}}}
 
 % --- Footer ---
 \fancyfoot[L]{\textcolor{gray}{\footnotesize Independent Conceptual Research}}
 
 % clickable DOI link:
-\fancyfoot[R]{\footnotesize\href{https://doi.org/10.5281/zenodo.17561066}{\textcolor{gray!65!black}{DOI: 10.5281/zenodo.17561066}}}
+\fancyfoot[R]{\footnotesize\href{https://doi.org/10.5281/zenodo.17561066}{\textcolor{gray!65!black}{DOI:}}}
 
 % clickable page reference (x of y)
 \fancyfoot[C]{\textcolor{gray}{\footnotesize Page \thepage\ of \pageref{LastPage}}}
@@ -142,11 +142,11 @@ All later operators, metrics, and interpretations are extensions of this core.
 \subsection{Agents and Own Space}
 
 Let $K$ be a set of agents.
-Each agent $k \in K$ is associated with an own space $S_k$, representing its internal experiential state space.
+Each agent $k \in K$ is associated with an own space $S_k$~\index{Core Concepts!own space@\textit{own space} \ensuremath{S_k}}, representing its internal experiential state space.
 
 \subsection{Life Rays}
 
-A life ray is defined as a time-parametrized curve
+A life ray $\gamma_k$~\index{Core Concepts!life ray@\textit{life ray} \ensuremath{\gamma_k}} is defined as a time-parametrized curve
 \begin{equation}
 \gamma_k : \mathbb{R}_{\ge 0} \to S_k,
 \end{equation}
@@ -154,7 +154,7 @@ mapping personal time to internal state.
 
 \subsection{Shared Events}
 
-An encounter between two agents $i,j \in K$ at time $t$ is modeled as an event
+An encounter between two agents $i,j \in K$ at time $t$ is modeled as an event~\index{Core Concepts!event@\textit{event} \ensuremath{E_{ij}(t)}}
 \begin{equation}
 E_{ij}(t).
 \end{equation}
@@ -177,7 +177,7 @@ where $t$ is the event time and $v_k$ an internal state imprint.
 
 \subsection{Fragment Chains}
 
-The fragment chain of agent $k$ at time $t$ is the ordered sequence
+The fragment chain of agent $k$\index{Core Concepts!agent@\textit{agent}\ensuremath{k}} at time $t$ is the ordered sequence
 \begin{equation}
   \mathcal{F}_k(t) = (F_k^{(1)}, F_k^{(2)}, \dots, F_k^{(n)}),
   \label{eq:fragment-chain}
