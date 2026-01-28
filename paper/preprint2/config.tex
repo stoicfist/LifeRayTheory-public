@@ -20,7 +20,7 @@
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{graphicx}
-\graphicspath{{./figures/}}
+\graphicspath{{../figures/}}
 
 
 % Section formatting
@@ -62,8 +62,7 @@
 
 % Custom index heading used in the Life Ray Theory style
 \newcommand{\indexheading}[1]{%
-  \hypertarget{index:#1}{\centerline{\Large{#1}}\nopagebreak}%
-  \pdfbookmark[2]{#1}{index:#1}%
-}
-
-\makeindex[options=-s LifeRayTheory.mst]
+\hypertarget{index:#1}{\centerline{\Large{#1}}\nopagebreak}%
+\pdfbookmark[2]{#1}{index:#1}
+}%
+\makeindex[options=-s LifeRayTheory2.mst]
