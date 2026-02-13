@@ -91,7 +91,8 @@ No automated reminders requiring personal data are used.
 
 ## 6. Data Storage
 
-Data is stored using a serverless cloud architecture.
+Data is stored in an encrypted cloud database hosted within the selected AWS region (e.g., EU-based infrastructure).
+No personally identifiable information is collected.
 
 - Encrypted at rest
 - Token-based participant linkage
