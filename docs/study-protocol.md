@@ -142,7 +142,7 @@ No diagnostic or psychological assessment is performed.
 
 ## 11. Versioning
 
-Document version: 0.1  
+Document version: 0.2  
 Status: Initial protocol draft  
 Last updated: 2026-02-13
 
