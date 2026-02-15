@@ -57,6 +57,7 @@ The conceptual foundations of this project are documented in the following prepr
 > Zenodo.  
 > DOI (latest version): https://doi.org/10.5281/zenodo.17457707
 
+
 BibTeX:
 ```bibtex
 @misc{ngo2025liferay,
