@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consent – Empirical Research Platform</title>
+  <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="header">
+      <div class="header-content">
+        <div>
+          <h1>Participant Information & Consent</h1>
+          <p class="muted">
+            Please read the information below before proceeding.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Study Information</h2>
+        <p>
+          This platform collects behavioral data for research purposes.
+          Participation is voluntary.
+        </p>
+
+        <p><strong>Study structure:</strong></p>
+        <ul>
+          <li><strong>Phase 1:</strong> Immediate response and rating task (response time measured).</li>
+          <li><strong>Phase 2:</strong> Delayed recall task after a predefined interval.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Collected Data</h2>
+        <ul>
+          <li>Short textual responses (participants should not include identifying information)</li>
+          <li>Valence, intensity, and confidence ratings</li>
+          <li>Response time measurements (milliseconds)</li>
+          <li>Delayed recall performance</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Privacy</h2>
+        <ul>
+          <li>No personally identifiable information is collected</li>
+          <li>No IP addresses are stored</li>
+          <li>No tracking cookies or third-party analytics are used</li>
+          <li>Data is stored encrypted within the selected AWS region</li>
+        </ul>
+        <p class="muted">
+          Additional documentation is available in the public repository.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Consent</h2>
+
+        <div class="consent-row">
+          <input type="checkbox" id="consentCheck" />
+          <label for="consentCheck">
+            I confirm that I am at least 18 years old, that I have read and understood
+            the study information, and that I voluntarily consent to anonymous data processing
+            for research purposes.
+          </label>
+        </div>
+
+        <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <a class="btn" href="index.html">Back</a>
+          <a class="btn btn-primary" id="continueBtn" href="study.html" aria-disabled="true" style="pointer-events: none; opacity: 0.6;">
+            Continue
+          </a>
+        </div>
+
+        <p class="muted" style="margin-top: 10px;">
+          This platform does not provide medical, psychological, or diagnostic services.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-section">
+        <p>The project was initialized by Peter Ngo.</p>
+        <p>
+          For study documentation, see the public repository:
+          <a href="https://github.com/stoicfist/LifeRayTheory-public" target="_blank" rel="noopener noreferrer">
+            GitHub Repository
+          </a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="consent.js" defer></script>
+</body>
+</html>
