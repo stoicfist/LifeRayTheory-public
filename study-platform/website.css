@@ -5,77 +5,10 @@
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    max-width: 960px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "nav nav"
-        "main aside"
-        "footer footer";
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    gap: 20px;
-    padding: 20px;
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.header {
-    grid-area: header;
-    width: 100%;
-    background-color: #1F1F1F;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-nav {
-    grid-area: nav;
-    width: 100%;
-    background-color: #1a1a1a;
-    font-size: 0.9rem;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-main {
-    grid-area: main;
-    background-color: #1F1F1F;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-between;
-    background-color: #242424;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
-    /* Damit die Footer-Elemente bei kleineren Bildschirmen umbrechen */
-}
-
-.footer-section {
-    flex: 1;
-    padding: 10px;
-    min-width: 200px;
-    /* Mindestbreite, um sicherzustellen, dass die Abschnitte nicht zu schmal werden */
 }
 
 /* Listenpunkte entfernen */
@@ -84,93 +17,281 @@ footer {
     padding: 0;
 }
 
-/* Grundlegende Stile für Layout-Elemente */
-header, nav, main, aside, footer {
-    padding: 10px;
-    min-height: 100px;
+/* =========================
+   Research UI polish (dark)
+   ========================= */
+
+/* Theme tokens */
+:root {
+  --bg: #0f1115;
+  --panel: #151823;
+  --panel-2: #11131b;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.70);
+  --subtle: rgba(255, 255, 255, 0.55);
+  --link: #7ab0ff;
+  --accent: #9ae6b4; /* soft mint */
+  --danger: #ff6b6b;
+
+  --shadow: 0 10px 30px rgba(0,0,0,0.45);
+  --shadow-soft: 0 6px 18px rgba(0,0,0,0.35);
+  --radius: 14px;
 }
 
-h1, h2, h3 {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin-bottom: 10px;
-    color: #ffffff;
+/* Improve typography */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 16px;
 }
 
-p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: #d3d3d3;
+/* Subtle background grain (optional, tasteful) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(1000px 700px at 20% 10%, rgba(122,176,255,0.12), transparent 60%),
+              radial-gradient(900px 600px at 80% 20%, rgba(154,230,180,0.10), transparent 60%),
+              radial-gradient(1200px 800px at 50% 90%, rgba(255,255,255,0.04), transparent 60%);
+  opacity: 0.9;
+  z-index: -1;
 }
 
-/* Navigation Stile */
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Single-column page wrapper */
+.page {
+  display: flex;
+  flex-direction: column;
+  Width: min(900px, 100%);
+  margin: 0 auto;
+  gap: 20px;
 }
 
-nav li {
-    margin-right: 20px;
+/* Panels feel more "card-like" */
+.header, main, footer {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(6px);
 }
 
-nav a {
-    text-decoration: none;
-    color: #529afe;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main und Aside Layout */
-main, aside {
-    width: 100%;
+.header {
+  background: linear-gradient(180deg, rgba(21,24,35,0.95), rgba(17,19,27,0.95));
+  padding: 24px;
 }
 
 main {
-    display: block;
+  background: rgba(21,24,35,0.78);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-aside {
-    display: block;
+footer {
+  background: rgba(21,24,35,0.70);
+  padding: 24px;
 }
 
-/* Flexbox für Footer-Boxen */
-footer>div {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
+/* Headings */
+h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.01em;
+}
+h2 {
+  font-size: 1.25rem;
+  margin-top: 8px;
+}
+h3 {
+  font-size: 1.05rem;
 }
 
-/* Links im Footer */
-footer a {
-    color: #1E90FF;
-    text-decoration: none;
+/* Paragraphs */
+p {
+  color: var(--muted);
+}
+small, .muted {
+  color: var(--subtle);
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* Links */
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-/* Responsive Anpassungen */
+/* List spacing */
+ul {
+  margin-left: 1.1rem;
+}
+li {
+  margin: 0.25rem 0;
+}
+
+/* Section cards inside main */
+.card {
+  background: rgba(17,19,27,0.55);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 20px;
+  box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+.card:first-child {
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+}
+.card:last-child {
+  border-radius: 0;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Micro feedback */
+:focus-visible {
+  outline: 2px solid rgba(122,176,255,0.55);
+  outline-offset: 2px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(122,176,255,0.14);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+  user-select: none;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  background: rgba(122,176,255,0.20);
+  border-color: rgba(255,255,255,0.18);
+}
+.btn:active {
+  transform: translateY(0px);
+}
+.btn-primary {
+  background: rgba(154,230,180,0.16);
+}
+.btn-primary:hover {
+  background: rgba(154,230,180,0.22);
+}
+
+/* Inline "pill" badges */
+.pill {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  color: var(--muted);
+}
+
+/* Consent checkbox row */
+.consent-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+}
+.consent-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #7ab0ff;
+}
+
+/* Footer section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Minimal TOC navigation (document-style) */
+.toc {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(21,24,35,0.70);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(6px);
+  padding: 10px 14px;
+}
+
+.toc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.toc-list a {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: var(--muted);
+  border: 1px solid transparent;
+  transition: color 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+
+.toc-list a:hover {
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(255,255,255,0.05);
+  border-color: var(--border);
+}
+
+/* Responsive: keep content readable on small screens */
 @media (max-width: 768px) {
-    body {
-        grid-template-areas:
-            "header"
-            "nav"
-            "main"
-            "aside"
-            "footer";
-        grid-template-columns: 1fr;
-    }
+  body {
+    padding: 12px;
+  }
 
-    footer {
-        flex-direction: column;
-    }
+  .page {
+    width: 100%;
+  }
 
-    footer>div {
-        margin-bottom: 10px;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .toc {
+    padding: 10px 12px;
+  }
+
+  .toc-list {
+    gap: 6px 10px;
+  }
 }
