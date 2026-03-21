@@ -1,7 +1,6 @@
 # Life Rays & Fragment Chains — A Theory of Encounter
 
-**Author:** Peter Ngo  
-**DOI:** [10.5281/zenodo.17457707](https://doi.org/10.5281/zenodo.17457707)  
+**Author:** Peter Ngo    
 **License:** CC BY-NC-SA 4.0  
 **Type:** Independent Conceptual Research  
 **Language:** English  
@@ -51,16 +50,18 @@ It is not affiliated with any university or institution.
 
 ## Citation
 
-If you reference this work, please cite:
+The conceptual foundations of this project are documented in the following preprint:
 
-> Ngo, Peter. (2025). *Life Rays & Fragment Chains — A Theory of Encounter.* Zenodo.  
-> DOI (latest version): [10.5281/zenodo.17457707](https://doi.org/10.5281/zenodo.17457707)
+> Ngo, Peter. (2025). *Life Rays & Fragment Chains — A Theory of Encounter (Part I).*  
+> Zenodo.  
+> DOI (latest version): https://doi.org/10.5281/zenodo.17457707
+
 
 BibTeX:
 ```bibtex
 @misc{ngo2025liferay,
   author       = {Ngo, Peter},
-  title        = {Life Rays \& Fragment Chains — A Theory of Encounter},
+  title        = {Life Rays \& Fragment Chains — A Theory of Encounter (Part I)},
   year         = {2025},
   doi          = {10.5281/zenodo.17457707},
   howpublished = {Zenodo Preprint},
