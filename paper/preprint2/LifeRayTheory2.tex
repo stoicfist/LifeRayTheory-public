@@ -250,7 +250,7 @@ All further definitions refine this structure by adding semantic, affective, and
 \subsection{Extended Event Structure}
 
 While the core model represents an event as a minimal intersection $E_{ij}(t)$,
-we now enrich events with descriptive and phenomenological parameters:
+we now enrich events~\index{Extended Structures!extended event@\textit{extended event} \ensuremath{E_{ij}=(t,C,D,I,V,R)}} with descriptive and phenomenological parameters:
 
 \begin{equation}
 E_{ij} = (t, C, D, I, V, R),
@@ -332,7 +332,7 @@ for each participant:
 \[
 F_k = (s_k, \phi_k, \theta_k, M_k),
 \]
-where $s_k$ is the salience, $\phi_k$ a semantic label,
+where $s_k$ is the salience~\index{Semantic / Dynamical Quantities!salience@\textit{salience} \ensuremath{s_k}}, $\phi_k$ a semantic label,
 $\theta_k$ the internal timestamp, and $M_k$ a set of affective, bodily,
 or contextual markers.
 
@@ -348,7 +348,9 @@ defined in Eq.~\eqref{eq:fragment-chain}.
 where each fragment corresponds to a previously transduced encounter event.
 Together, these fragments define the evolving structure of memory over time.
 
-We denote by $\mathbin{\|}$ the concatenation operator on fragment chains, such that
+We denote by $\mathbin{\|}$ the concatenation~\index{Structural Operators!concatenation@\textit{concatenation} \ensuremath{\|}}
+
+ operator on fragment chains, such that
 \begin{equation}
 \mathcal{F}_k(t+\varepsilon) = \mathcal{F}_k(t) \mathbin{\|} F_k
 \label{eq:fragment-concatenation}
@@ -489,7 +491,8 @@ Transduction is inherently perspective-dependent:
 from the same event $E_{ij}$, two generally distinct fragments
 $F_i$ and $F_j$ emerge, differing in semantic label $\ell$
 and salience $s$.
-Subsequent \emph{alignment} through shared recall or narration
+Subsequent \emph{alignment}~\index{Semantic / Dynamical Quantities!alignment@\textit{alignment} \ensuremath{A(F_i,F_j)}}
+ through shared recall or narration
 can be modeled as a partial matching
 \[
 \mathcal{A}(F_i,F_j)\in[0,1],
@@ -502,7 +505,7 @@ Repeated reciprocal intersection events reinforce existing
 fragments or generate successor fragments.
 At a macroscopic level, this process increases the
 \emph{degree of intertwining} between life rays.
-Operationally, a \emph{twist index} may be updated incrementally
+Operationally, a \emph{twist index}~\index{Semantic / Dynamical Quantities!twist index@\textit{twist index} \ensuremath{\mathrm{twist}_{ij}}} may be updated incrementally
 after each event:
 \[
 \text{twist}_{ij}
@@ -567,7 +570,7 @@ thereby shaping memory depth, fragment density, and later resonance effects.
 
 While transduction generates individual fragments from shared events, biographical
 coherence arises through their integration into the existing fragment chain.
-We model this process by an integration operator acting on the memory structure of a
+We model this process by an integration operator $A_k$~\index{Structural Operators!integration@\textit{integration} \ensuremath{A_k}} acting on the memory structure of a
 single agent $k$:
 
 \begin{equation}
@@ -640,7 +643,7 @@ Let $W$ denote the number of effective windings before realization.
 
 \subsection{First Humor Metric}
 
-As a first approximation, the intensity of humor may be expressed as
+As a first approximation, the intensity of humor\index{Semantic / Dynamical Quantities!humor@\textit{humor} \ensuremath{A_{\mathrm{humor}}}} may be expressed as
 \begin{equation}
 A_{\text{humor}} \;\propto\; \frac{W}{\lvert t_r - t_e \rvert},
 \end{equation}
