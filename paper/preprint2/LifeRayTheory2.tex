@@ -26,7 +26,7 @@
 
 \title{\textbf{Life Rays \& Fragment Chains --\\
 A Theory of Encounter}}
-\author{Peter Ngo}
+\author{Ngoc Son Peter Ngo}
 \date{\today}
 
 \begin{document}
@@ -189,7 +189,7 @@ induced by the encounter.
 \subsection{Fragment Chains}
 
 Each agent $k$~\index{Core Concepts!agent@\textit{agent} \ensuremath{k}} is associated with a fragment chain
-$\mathcal{F}_k(t)$~\index{Core Concepts!fragment chain@\textit{fragment chain} \ensuremath{\mathcal{F}_k(t)}},
+\index{Core Concepts!fragment chain@\textit{fragment chain} $\mathcal{F}_k(t)$},
 which represents the ordered sequence of memory fragments at time $t$:
 \begin{equation}
   \mathcal{F}_k(t) = (F_k^{(1)}, F_k^{(2)}, \dots, F_k^{(n)}).
@@ -250,7 +250,7 @@ All further definitions refine this structure by adding semantic, affective, and
 \subsection{Extended Event Structure}
 
 While the core model represents an event as a minimal intersection $E_{ij}(t)$,
-we now enrich events~\index{Extended Structures!extended event@\textit{extended event} \ensuremath{E_{ij}=(t,C,D,I,V,R)}} with descriptive and phenomenological parameters:
+we now enrich events~\index{Extended Structures!extended event@\textit{extended event}\ensuremath{E_{ij}=(t,C,D,I,V,R)}} with descriptive and phenomenological parameters:
 
 \begin{equation}
 E_{ij} = (t, C, D, I, V, R),
@@ -285,7 +285,7 @@ as illustrated in Figure~\ref{fig:life_rays_events}.
     \centering
         \begin{tikzpicture}[x=1cm,y=1cm,>=stealth,thick]
             % Time axis
-            \draw[->,gray!70] (0,0) -- (10,0) node[right]{Time};
+            \draw[->,gray!70] (0,0.2) -- (10,0.2) node[right]{Time};
 
             % Life ray i
             \draw[blue] (0.5,1.2) -- (9.5,1.2)
@@ -300,23 +300,23 @@ as illustrated in Figure~\ref{fig:life_rays_events}.
             \node[gray!60] at (5.0,1.8) {\footnotesize shared space};
 
             % Intersection events
-            \filldraw[blue!70] (3.8,1.2) circle (2.2pt);
-            \filldraw[red!70]  (3.8,-0.8) circle (2.2pt);
-            \draw[->,gray!70] (3.8,0.55) -- (3.8,0.95);
-            \draw[->,gray!70] (3.8,-0.1) -- (3.8,-0.55);
-            \node at (3.8,0.25) {\footnotesize $E_{ij}^{(1)}$};
+            \filldraw[blue!70] (4.0,1.2) circle (2.2pt);
+            \filldraw[red!70]  (4.0,-0.8) circle (2.2pt);
+            \draw[->,gray!70] (4.0,0.55) -- (4.0,0.95);
+            \draw[->,gray!70] (4.0,-0.1) -- (4.0,-0.55);
+            \node at (4.0,0.25) {\footnotesize $E_{ij}^{(1)}$};
 
-            \filldraw[blue!70] (5.2,1.2) circle (2.2pt);
-            \filldraw[red!70]  (5.2,-0.8) circle (2.2pt);
-            \draw[->,gray!70] (5.2,0.55) -- (5.2,0.95);
-            \draw[->,gray!70] (5.2,-0.1) -- (5.2,-0.55);
-            \node at (5.2,0.25) {\footnotesize $E_{ij}^{(2)}$};
+            \filldraw[blue!70] (5.0,1.2) circle (2.2pt);
+            \filldraw[red!70]  (5.0,-0.8) circle (2.2pt);
+            \draw[->,gray!70] (5.0,0.55) -- (5.0,0.95);
+            \draw[->,gray!70] (5.0,-0.1) -- (5.0,-0.55);
+            \node at (5.0,0.25) {\footnotesize $E_{ij}^{(2)}$};
 
-            \filldraw[blue!70] (6.2,1.2) circle (2.2pt);
-            \filldraw[red!70]  (6.2,-0.8) circle (2.2pt);
-            \draw[->,gray!70] (6.2,0.55) -- (6.2,0.95);
-            \draw[->,gray!70] (6.2,-0.1) -- (6.2,-0.55);
-            \node at (6.2,0.25) {\footnotesize $E_{ij}^{(3)}$};
+            \filldraw[blue!70] (6.0,1.2) circle (2.2pt);
+            \filldraw[red!70]  (6.0,-0.8) circle (2.2pt);
+            \draw[->,gray!70] (6.0,0.55) -- (6.0,0.95);
+            \draw[->,gray!70] (6.0,-0.1) -- (6.0,-0.55);
+            \node at (6.0,0.25) {\footnotesize $E_{ij}^{(3)}$};
 
         \end{tikzpicture}
 
@@ -348,7 +348,7 @@ defined in Eq.~\eqref{eq:fragment-chain}.
 where each fragment corresponds to a previously transduced encounter event.
 Together, these fragments define the evolving structure of memory over time.
 
-We denote by $\mathbin{\|}$ the concatenation~\index{Structural Operators!concatenation@\textit{concatenation} \ensuremath{\|}}
+We denote by $\mathbin{\|}$ the concatenation~\index{Structural Operators!concatenation@\textit{concatenation} $\vert\vert$}
 
  operator on fragment chains, such that
 \begin{equation}
@@ -570,7 +570,7 @@ thereby shaping memory depth, fragment density, and later resonance effects.
 
 While transduction generates individual fragments from shared events, biographical
 coherence arises through their integration into the existing fragment chain.
-We model this process by an integration operator $A_k$~\index{Structural Operators!integration@\textit{integration} \ensuremath{A_k}} acting on the memory structure of a
+We model this process by an integration operator $A_k$~\index{Structural Operators!integration@\textit{integration} $A_k$} acting on the memory structure of a
 single agent $k$:
 
 \begin{equation}
