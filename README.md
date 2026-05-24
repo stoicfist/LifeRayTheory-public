@@ -1,6 +1,6 @@
 # Life Rays & Fragment Chains — A Theory of Encounter
 
-**Author:** Peter Ngo  
+**Author:** Ngoc Son Peter Ngo  
 **License:** CC BY-NC-SA 4.0  
 **Type:** Independent Conceptual Research  
 **Language:** English  
@@ -26,7 +26,7 @@ The theory is developed across a multi-part research program:
 Introduces the core conceptual architecture, including life rays, shared space, and encounter-based modeling.
 
 📄 Zenodo: https://doi.org/10.5281/zenodo.17457707  
-📄 PDF: [`paper/part1.pdf`](paper/part1.pdf)
+📄 PDF: [`preprint/part1.pdf`](paper/preprint1/LifeRayTheory.pdf)
 
 ---
 
@@ -34,7 +34,7 @@ Introduces the core conceptual architecture, including life rays, shared space, 
 Develops the mathematical and structural foundations of the theory, including fragment chains, transduction, and salience-based integration.
 
 📄 Zenodo: (https://doi.org/10.5281/zenodo.19145601)  
-📄 PDF: [`paper/part2.pdf`](paper/part2.pdf)
+📄 PDF: [`preprint/part2.pdf`](paper/preprint2/LifeRayTheory2.pdf)
 
 ---
 
@@ -67,11 +67,11 @@ It is not affiliated with any university or institution.
 If you use or reference this work, please cite the corresponding part:
 
 ### Part I
-> Ngo, Peter. (2025). *Life Rays & Fragment Chains — A Theory of Encounter (Part I).*  
+> Ngo, Ngoc Son Peter. (2025). *Life Rays & Fragment Chains — A Theory of Encounter (Part I).*  
 Zenodo. https://doi.org/10.5281/zenodo.17457707
 
 ### Part II
-> Ngo, Peter. (2026). *Life Rays & Fragment Chains — A Theory of Encounter (Part II: Formal Framework).*  
+> Ngo, Ngoc Son Peter. (2026). *Life Rays & Fragment Chains — A Theory of Encounter (Part II: Formal Framework).*  
 Zenodo. https://doi.org/10.5281/zenodo.19145601
 
 ---
